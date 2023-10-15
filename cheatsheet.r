@@ -22,3 +22,20 @@ cat (strings , "is from a concatenated string","\n")
 
 cat (bools, "are booleans","\n")
 # Output: TRUE FALSE are booleans 
+
+
+# R can function as a simple calculator.
+5 + 7 # Output: 12
+101 / 9 # Output: 11.22222
+
+# Find absolute value.
+abs(-55) # Output: 55
+
+# Assign variables and perform operations.
+a <- -31
+a + 2 # Output: -29
+
+# Assign variables to a vector of values like a tuple.
+d <- c(4, -13, 7, -99, -1)
+2 * d # Output: 8  -26   14 -198   -2
+abs(d) # Output: 4 13  7 99  1
