@@ -39,3 +39,18 @@ a + 2 # Output: -29
 d <- c(4, -13, 7, -99, -1)
 2 * d # Output: 8  -26   14 -198   -2
 abs(d) # Output: 4 13  7 99  1
+
+
+# If else statement.
+x <- 0
+if (x < 0) {
+print("Negative number")
+} else if (x > 0) {
+print("Positive number")
+} else
+print("Zero") # Output: Zero
+
+# Use "ifelse" statement to see if elements are even or odd.
+y = c(2,5,13,20)
+ifelse(y %% 2 == 0,"Even","Odd") # Output: "Even" "Odd"  "Odd"  "Even"
+
