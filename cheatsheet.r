@@ -54,3 +54,45 @@ print("Zero") # Output: Zero
 y = c(2,5,13,20)
 ifelse(y %% 2 == 0,"Even","Odd") # Output: "Even" "Odd"  "Odd"  "Even"
 
+
+# While loops.
+# Print the first 5 even numbers.
+i <- 2
+while (i <= 10) {
+  print(i)
+  i <- i + 2
+} # Output: 2 4 6 8 10   
+
+# Print first odd numbers but stop before 9.
+i <- 1
+while (i < 10) {
+  print(i)
+  i <- i + 2
+  if (i == 9) {
+    break
+  }
+} # Output: 1 3 5 7 
+
+# Print first even numbers until 12 but skip at 6.
+i <- 0
+while (i <= 11) {
+  i <- i + 2
+  if (i == 6) {
+    next
+  }
+  print(i)
+} # Output: 2 4 8 10 12
+
+# Print "Lucky Seven! when the number reaches 7.
+wheel <- 1
+while (wheel <= 7) {
+  if (wheel < 7) {
+    print("Spinning")
+  } else {
+    print("Lucky Seven!!")
+  }
+  wheel<- wheel + 1
+} # Output: "Spinning" "Spinning" "Spinning" "Spinning" "Spinning" "Spinning" "Lucky Seven!"
+
+
+
