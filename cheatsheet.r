@@ -95,4 +95,71 @@ while (wheel <= 7) {
 } # Output: "Spinning" "Spinning" "Spinning" "Spinning" "Spinning" "Spinning" "Lucky Seven!"
 
 
+# For loop.
+# For loop to print out elements in a list.
+illness <- list("common cold", "influenza", "sinusitis")
+
+for (x in illness) {
+  print(x)
+} # Output: "common cold" "influenza" "sinusitis"
+
+
+# For loop to print a patients' list but break before a specific patent, Gilsing, is reached.
+patients<- list("Collins", "Hurley", "Gilsing", "Kramer", "Cox")
+
+for (x in patients) {
+  if (x == "Gilsing") {
+    break
+  }
+  print(x)
+} # Output: "Collins" "Hurley"
+
+fruits <- list("apple", "banana", "cherry")
+
+for (x in fruits) {
+  if (x == "banana") {
+    next
+  }
+  print(x)
+}
+
+# For loop to print a list of states in a list but skip a few.
+states <- list("Virginia", "North Carolina", "South Carolina", "Georgia", "Florida")
+
+for (x in states) {
+  if (x == "South Carolina") {
+    next
+  }
+  print(x)
+} # Output: "Virginia" "North Carolina" "Georgia" "Florida"
+
+
+# For loop through the ages and print out their high school grade.
+highschooler <- 14:18
+
+for (x in highschooler) {
+  if (x == 14) {
+    print(paste("Your age is", x, "Freshman!"))
+  } 
+    else if (x == 15) {
+    print(paste("Your age is", x, "Sophomore!"))
+  } 
+    else if (x == 16) {
+    print(paste("Your age is", x, "Junior!"))
+  } 
+    else if (x == 17) {
+    print(paste("Your age is", x, "Senior!"))
+  } 
+  else {
+    print(paste("Your age is", x, "You're outta here!"))
+  }
+}
+
+# Output: 
+# "Your age is 14 Freshman!"
+# "Your age is 15 Sophomore!"
+# "Your age is 16 Junior!"
+# "Your age is 17 Senior!"
+# "Your age is 18 You're outta here!"
+
 
