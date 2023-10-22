@@ -163,3 +163,32 @@ for (x in highschooler) {
 # "Your age is 18 You're outta here!"
 
 
+# Functions
+# Square an integer and subtract by the same value
+calculate <- function(x) {
+  return ((x * x) - x)
+}
+
+print(calculate(3)) # Output: 6
+print(calculate(5))# Output: 20
+print(calculate(9)) # Output: 72
+
+# Print a string recommending a toothpaste brand. Set a default value.
+recomm_function <- function(country = "Colgate") {
+  paste("Today's recommended brand is", country)
+}
+
+recomm_function("Crest") # Output:  "Today's recommended brand is Crest"
+recomm_function("Sensodyne") # Output: "Today's recommended brand is Sensodyne"
+recomm_function() # Output: "Today's recommended brand is Colgate"
+recomm_function("Arm Hammer")  # Output: "Today's recommended brand is Arm Hammer"
+
+# Square a set of integers from 1 to x.
+square_set <- function(x) {
+   for(i in 1:x) {
+      y <- i^2
+      print(y)
+   }
+}
+
+square_set(5) # Output: 1 4 9 16 25
